@@ -1,7 +1,8 @@
-[gd_scene load_steps=3 format=2]
+[gd_scene load_steps=4 format=2]
 
 [ext_resource path="res://system/main.gd" type="Script" id=1]
 [ext_resource path="res://system/components/fighter.tscn" type="PackedScene" id=2]
+[ext_resource path="res://icon.png" type="Texture" id=3]
 
 [node name="Main" type="Panel"]
 anchor_right = 1.0
@@ -45,6 +46,7 @@ margin_bottom = 382.0
 custom_constants/separation = 50
 
 [node name="Fighter0" parent="CenterContainer/MarginContainer/VBoxContainer/FighterContainer" instance=ExtResource( 2 )]
+fighter_name = "WUOOOOAH"
 
 [node name="Label" type="Label" parent="CenterContainer/MarginContainer/VBoxContainer/FighterContainer"]
 margin_left = 352.0
@@ -56,9 +58,8 @@ text = "VS"
 [node name="Fighter1" parent="CenterContainer/MarginContainer/VBoxContainer/FighterContainer" instance=ExtResource( 2 )]
 margin_left = 417.0
 margin_right = 719.0
-
-[node name="TextureRect" parent="CenterContainer/MarginContainer/VBoxContainer/FighterContainer/Fighter1/PanelContainer/MarginContainer" index="0"]
-flip_h = true
+fighter_name = "Godot"
+fighter_picture = ExtResource( 3 )
 
 [node name="BattleLog" type="PanelContainer" parent="CenterContainer/MarginContainer/VBoxContainer"]
 margin_top = 402.0
@@ -86,5 +87,7 @@ margin_bottom = 109.0
 bbcode_enabled = true
 bbcode_text = "[u]Placeholder[/u] WUOOOOOOHHs [u]Placeholder[/u]! Deals [color=red]45 Damage Points!"
 text = "Placeholder WUOOOOOOHHs Placeholder! Deals 45 Damage Points!"
+scroll_following = true
+custom_effects = [ null ]
 
 [editable path="CenterContainer/MarginContainer/VBoxContainer/FighterContainer/Fighter1"]

@@ -10,7 +10,8 @@ config_version=4
 
 [application]
 
-config/name="Godot Deathbattle"
+config/name="Deathbattle"
+run/main_scene="res://system/main.tscn"
 config/icon="res://icon.png"
 
 [display]
